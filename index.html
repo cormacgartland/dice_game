@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="logic.js"></script>
+</head>
+
+<body>
+
+    <!-- 
+        RULES:
+            # 5 is wild, accounts for 0, and are desired
+            # you must remove at least die per roll (DO NOT ALLOW RE-ROLLS)
+            # you want the LOWEST number remaining
+            # lowest number wins, ya know, like golf
+    -->
+
+    
+    <div class="container">
+        <div class="dice-container">
+            <div class="dice" id="1" onclick="removeDie(1, final1)"></div>
+            <div class="dice" id="2" onclick="removeDie(2, final2)"></div>
+            <div class="dice" id="3" onclick="removeDie(3, final3)"></div>
+            <div class="dice" id="4" onclick="removeDie(4, final4)"></div>
+            <div class="dice" id="5" onclick="removeDie(5, final5)"></div>
+        </div>
+
+        <button class="button-roll" id="button" onclick="roll()">Roll</button>
+
+        <div class="dice-collection">
+            <div class="dice-collected" id="final1"></div>
+            <div class="dice-collected" id="final2"></div>
+            <div class="dice-collected" id="final3"></div>
+            <div class="dice-collected" id="final4"></div>
+            <div class="dice-collected" id="final5"></div>
+        </div>
+
+        <div class="total-display" id="total"></div>
+    </div>
+
+</body>
+
+</html>

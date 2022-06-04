@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(78, 100, 140);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dice {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    box-shadow: 20px, 20px blue;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.dice-collection {
+    display: flex;
+    flex-direction: row;
+}
+
+.dice-collected {
+    display: none;
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.button-roll {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.total-display {
+    height: 100px;
+    width: 200px;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+}
